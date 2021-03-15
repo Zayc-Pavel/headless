@@ -1,0 +1,9 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  FriendsOfTYPO3\Headless\:
+    resource: '../Classes/*'
+    exclude: [ '../Classes/Form/*', '../Classes/XClass/Controller/FormFrontendController.php', '../Classes/XClass/FormRuntime.php',]
